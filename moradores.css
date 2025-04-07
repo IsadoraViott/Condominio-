@@ -1,0 +1,66 @@
+#tudo_carro {
+    display: none;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+};
+ 
+h1{
+  color: #DAA520;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    background-color: #DAA520;
+    width: 70%;
+    box-shadow: #DAA520 1px 1px 1px;
+   
+}
+.divFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    justify-items: center;
+}
+.fa-solid{
+    color: #DAA520;
+    font-size: x-large;
+}
+.card{
+    border: solid #DAA520 2px;
+    width: 75%;
+    padding: 5px;
+}
+.icones{
+    display: flex;
+    justify-content: space-evenly;
+}
+h2{
+    font-size:medium;
+}
+@media (max-width: 600px){
+    #tudo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+        justify-items: center;
+    }
+    .card{
+        border: solid #DAA520 2px;
+        width: 55%;
+        padding: 5px;
+    }
+    h2{
+        font-size: smaller;
+    }
+}
